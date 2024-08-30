@@ -1,11 +1,18 @@
 import './App.css';
-import Header from "../components/Header/Header";
+import FlashCardWrapper from "../components/FlashCardWrapper/FlashCardWrapper";
+import Navbar from "../components/Navbar/Navbar";
 
 function App() {
+    const wordList = [
+        { word: "Tisch", translatedWord: "Table" },
+        { word: "Stuhl", translatedWord: "Chair" },
+        { word: "Buch", translatedWord: "Book" }
+    ];
+
   return (
-    <div>
-        <p>Hello World</p>
-        <Header></Header>
+    <div className={"flex"}>
+        <Navbar></Navbar>
+        <FlashCardWrapper wordList={wordList}></FlashCardWrapper>
     </div>
   );
 }

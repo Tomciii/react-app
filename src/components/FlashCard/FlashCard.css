@@ -1,0 +1,12 @@
+.flashcard {
+    margin: 30px;
+    border: 1px;
+    background-color: wheat;
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+}
+
+.disabled {
+    display: none;
+}

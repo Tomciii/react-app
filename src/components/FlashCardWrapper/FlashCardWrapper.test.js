@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Header from './Header';
+import FlashCardWrapper from './FlashCardWrapper';
 
 describe('<Header />', () => {
   test('it should mount', () => {
