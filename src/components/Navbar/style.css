@@ -1,0 +1,10 @@
+.background {
+    background-color: #faf7f7;
+    color: black;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+body, p {
+    margin: 0;
+}
