@@ -15,6 +15,7 @@ export default function App() {
                 <Route path="/" element={<Home />}/>
                     <Route index element={<Home />} />
                     <Route path="flashcards" element={<FlashCardWrapper />} />
+                    <Route path="flashcards/:cardset/:word" element={<FlashCardWrapper />} />
                     <Route path="dictionary" element={<Dictionary />} />
                     <Route path="*" element={<Dictionary />} />
             </Routes>

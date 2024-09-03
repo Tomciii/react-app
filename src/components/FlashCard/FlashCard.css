@@ -1,11 +1,11 @@
 .flashcard {
     margin: 30px;
     border: var(--second-color) 0.2rem solid;
-    background-color: var(--main-color);
-    border-radius: 15px;
-    width: 20rem;
-    height: 6.5rem;
+    border-radius: 10px;
+    width: 25rem;
+    height: 8rem;
     padding: 10px 0px;
+    font-size: 1.5rem;
 }
 
 .disabled {

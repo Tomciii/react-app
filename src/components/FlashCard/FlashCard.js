@@ -1,16 +1,15 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './FlashCard.css';
 
-const FlashCard = ({wordPair}) => {
-    const [showMe, setShowMe] = useState(false);
-
+const FlashCard = ({wordPair, showMe, setShowMe}) => {
    return (
        <button className={"flashcard flex justify-center"} onClick={() => {
            setShowMe(true)
        }}>
+
        <div >
                 <p id={"word"}>{wordPair.word}</p>
-                {showMe? <p id={"translatedWord"}>{wordPair.translatedWord}</p> : <></>}
+           {showMe? <div><hr className={"width-200"}/><p id={"translatedWord"}>{wordPair.translatedWord}</p></div> : <></>}
         </div>
 </button>
     );

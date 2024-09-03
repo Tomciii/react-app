@@ -29,6 +29,10 @@ code {
   align-items: center;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -52,15 +56,37 @@ code {
 
 .big-btn {
   background-color: #f6eeee;
-  border: none;
   padding: 2rem 3rem;
+}
+
+.small-btn {
+  background-color: #f6eeee;
+  padding: 1rem;
+  width: 7rem;
 }
 
 button {
   font-family: Montserrat;
+  border: none;
 }
 
 button:hover {
   cursor: pointer;
   background-color: #faf7f7;
+}
+
+.width-200 {
+  width: 200px;
+}
+
+.hard {
+  background-color: #ea9e9e;
+}
+
+.ok {
+  background-color: #ececbf;
+}
+
+.easy {
+  background-color: #a4efa4;
 }

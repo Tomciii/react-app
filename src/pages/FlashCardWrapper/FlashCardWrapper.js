@@ -12,6 +12,8 @@ const FlashCardWrapper = () => {
 
 const [currentIndex, setCurrentIndex] = useState(0);
 
+const [showMe, setShowMe] = useState(false);
+
 const handleNext = () => {
   setCurrentIndex((prevIndex) => (prevIndex + 1) % wordList.length);
  };
@@ -24,12 +26,14 @@ const handleNext = () => {
  return (
      <div>
       <Navbar></Navbar>
-       <div className={"flex"}>
-       <FlashCard wordPair={wordList[currentIndex]}></FlashCard>
-        <div>
-         <button onClick={handlePrevious} className={"mr-20"}>Previous</button>
-         <button onClick={handleNext}>Next</button>
-        </div>
+       <div className={"flex flex-column"}>
+
+       <FlashCard wordPair={wordList[currentIndex]} showMe={showMe} setShowMe={setShowMe}></FlashCard>
+           { showMe ? <div>
+         <button onClick={handlePrevious} className={"hard small-btn mr-20"}>Hard</button>
+         <button onClick={handleNext} className={"ok small-btn mr-20"}>Ok</button>
+         <button onClick={handleNext} className={"small-btn easy"}>Easy</button>
+        </div> : <></>}
    </div>
      </div>
  );
