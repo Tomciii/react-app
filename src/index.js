@@ -5,6 +5,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Dictionary from "./pages/Dictionary/Dictionary";
 import FlashCardWrapper from "./pages/FlashCardWrapper/FlashCardWrapper";
+import FlashCards from "./pages/FlashCards/FlashCards";
 
 
 export default function App() {
@@ -14,7 +15,7 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Home />}/>
                     <Route index element={<Home />} />
-                    <Route path="flashcards" element={<FlashCardWrapper />} />
+                <Route path="flashcards" element={<FlashCards />} />
                     <Route path="flashcards/:cardset/:word" element={<FlashCardWrapper />} />
                     <Route path="dictionary" element={<Dictionary />} />
                     <Route path="*" element={<Dictionary />} />

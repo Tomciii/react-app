@@ -1,9 +1,10 @@
 import React from 'react';
 import './style.css';
+import {Link} from "react-router-dom";
 
 const Navbar = () => (
  <div className={"background"}>
-     <p className={"pl-20 bold"}>Learning App</p>
+     <Link to={"/"}><button className={"background-none"}><p className={"pl-20 bold"}>Learning App</p></button></Link>
  </div>
 );
 
