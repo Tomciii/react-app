@@ -1,10 +1,14 @@
 import React from 'react';
 import Navbar from "../../components/Navbar/Navbar";
+import WordTable from "../../components/WordTable/WordTable";
+import "./style.css";
 
 const Dictionary = () => (
  <div data-testid="Dictionary">
      <Navbar></Navbar>
-   Hello world Disctionary
+     <div className={"table"}>
+         <WordTable></WordTable>
+     </div>
  </div>
 );
 

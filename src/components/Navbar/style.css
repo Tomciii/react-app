@@ -1,6 +1,4 @@
 .background {
-    background-color: #faf7f7;
-    color: black;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
@@ -9,6 +7,12 @@ body, p {
     margin: 0;
 }
 
+.logo {
+
+}
 .background-none {
-    background: none;
+    margin: 0;
+    color: white;
+    text-decoration: underline;
+    background: none !important;
 }

@@ -72,6 +72,7 @@ code {
 button {
   font-family: Montserrat;
   border: none;
+  color: black;
 }
 
 button:hover {

@@ -8,7 +8,7 @@ const FlashCard = ({wordPair, showMe, setShowMe}) => {
        }}>
 
        <div >
-                <p id={"word"}>{wordPair.word}</p>
+           <p id={"word"}>{wordPair.word}</p>
            {showMe? <div><hr className={"width-200"}/><p id={"translatedWord"}>{wordPair.translatedWord}</p></div> : <></>}
         </div>
 </button>
